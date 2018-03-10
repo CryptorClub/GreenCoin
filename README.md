@@ -1,7 +1,7 @@
 GreenCoin integration/staging tree
 ================================
 
-http://www.greencoin.org
+http://greencoin.life
 
 Copyright (c) 2009-2013 GreenCoin Developers
 
@@ -15,7 +15,7 @@ out collectively by the network. GreenCoin is also the name of the open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the GreenCoin client software, see http://www.greencoin.org.
+the GreenCoin client software, see http://greencoin.life
 
 License
 -------
@@ -42,7 +42,7 @@ match the project's coding conventions (see `doc/coding.md`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/greencoin/greencoin/tags) are created
+completely stable. [Tags](https://github.com/CryptorClub/GreenCoin/tags) are created
 regularly to indicate new official, stable release versions of GreenCoin.
 
 Testing
@@ -71,7 +71,7 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 Every pull request is built for both Windows and Linux on a dedicated server,
 and unit and sanity tests are automatically run. The binaries produced may be
 used for manual QA testing — a link to them will appear in a comment on the
-pull request posted by [GreenCoinPullTester](https://github.com/GreenCoinPullTester). See https://github.com/TheBlueMatt/test-scripts
+pull request posted by [GreenCoinPullTester](https://github.com/CryptorClub/GreenCoinPullTester). See https://github.com/TheBlueMatt/test-scripts
 for the build/test scripts.
 
 ### Manual Quality Assurance (QA) Testing
@@ -79,4 +79,4 @@ for the build/test scripts.
 Large changes should have a test plan, and should be tested by somebody other
 than the developer who wrote the code.
 
-See https://github.com/greencoin/QA/ for how to create a test plan.
+See https://github.com/CryptorClub/GreenCoin/ for how to create a test plan.

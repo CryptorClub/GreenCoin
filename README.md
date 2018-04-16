@@ -23,6 +23,12 @@ License
 GreenCoin is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
+For desktop Windows or Ubuntu use qt version of wallet
+------------------------------------------------------
+Windows - https://github.com/CryptorClub/GreenCoin/raw/master/greencoin-qt-windows.zip
+Linux\Ubuntu - https://github.com/CryptorClub/GreenCoin/raw/master/greencoin-qt-linux.tar.gz
+
+
 How to compile daemon node on Ubuntu 16.04
 ------------------------------------------
 

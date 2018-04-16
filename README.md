@@ -3,7 +3,7 @@ GreenCoin integration/staging tree
 
 http://greencoin.life
 
-Copyright (c) 2009-2013 GreenCoin Developers
+Copyright (c) 2009-2018 GreenCoin Developers
 
 What is GreenCoin?
 ----------------
@@ -22,6 +22,77 @@ License
 
 GreenCoin is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
+
+How to compile daemon node on Ubuntu 16.04
+------------------------------------------
+
+Use the following instructions
+
+Update your Ubuntu machine.
+
+    sudo apt-get update
+    sudo apt-get upgrade
+
+Install the dependencies to compile from source code.
+
+    sudo apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git libssl1.0.0-dbg
+    sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev
+
+Create a directory for the source code.
+
+    mkdir source_code
+    cd source_code
+
+    sudo apt-get -y install git
+    git clone https://github.com/CryptorClub/GreenCoin.git
+
+Go to the src directory of your source code.
+
+    cd src
+
+Execute the following command to compile the daemon.
+
+    make -f makefile.unix RELEASE=1
+
+The compiling will take about 30 minutes depending on your system. Required 2GB+ of RAM memory
+
+Your compiled daemon named `greencoind` can be found in the src folder when compiling is finished.
+
+Installation of daemon
+----------------------
+
+On Ubuntu 16.04 Move compiled daemon to your Home folder and follow instruction
+
+    mv greencoind $HOME
+    
+On Ubuntu 14.04 You do not need compile daemon, just download and untar
+
+    wget https://github.com/CryptorClub/GreenCoin/raw/master/greencoin-daemon-linux.tar.gz
+    tar -xzvf greencoin-daemon-linux.tar.gz
+
+Install the daemon.
+
+    chmod +x greencoind
+    sudo mv greencoind /usr/bin/
+
+Create the config file.
+
+    mkdir $HOME/.greencoin
+    nano $HOME/.greencoin/greencoin.conf
+
+Paste the following lines in greencoin.conf.
+
+    rpcuser=rpc_greencoin
+    rpcpassword=69c863e3356d3dae95df454a1
+    rpcallowip=127.0.0.1
+    listen=1
+    server=1
+    txindex=1
+    daemon=1
+
+Start your node with the following command.
+
+    greencoind
 
 Development process
 -------------------

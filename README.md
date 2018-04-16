@@ -25,7 +25,9 @@ information or see http://opensource.org/licenses/MIT.
 
 For desktop Windows or Ubuntu use qt version of wallet
 ------------------------------------------------------
+
 Windows - https://github.com/CryptorClub/GreenCoin/raw/master/greencoin-qt-windows.zip
+
 Linux\Ubuntu - https://github.com/CryptorClub/GreenCoin/raw/master/greencoin-qt-linux.tar.gz
 
 

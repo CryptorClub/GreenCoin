@@ -56,7 +56,7 @@ Create a directory for the source code.
 
 Go to the src directory of your source code.
 
-    cd src
+    cd GreenCoin/src
 
 Execute the following command to compile the daemon.
 

@@ -43,7 +43,7 @@ Update your Ubuntu machine.
 
 Install the dependencies to compile from source code.
 
-    sudo apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git libssl1.0.0-dbg
+    sudo apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-dev git libssl1.0.0-dbg
     sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev
 
 Create a directory for the source code.
@@ -56,7 +56,8 @@ Create a directory for the source code.
 
 Go to the src directory of your source code.
 
-    cd GreenCoin/src
+    mv GreenCoin source_code
+    cd source_code/src
 
 Execute the following command to compile the daemon.
 

@@ -58,6 +58,7 @@ Go to the src directory of your source code.
 
     mv GreenCoin source_code
     cd source_code/src
+    mkdir obj
 
 Execute the following command to compile the daemon.
 

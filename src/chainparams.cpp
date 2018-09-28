@@ -99,8 +99,11 @@ public:
         assert(hashGenesisBlock == uint256("0x0000000013db3f0e0cd09e6656f67f6367a8db86979486a445356fcba83e4792"));
         assert(genesis.hashMerkleRoot == uint256("0x796fecba7c91d8b5db8888115d0327e787bc986275347656a1be8b54e8d9feb1"));
 
-        vSeeds.push_back(CDNSSeedData("walletbuilders.com", "node.walletbuilders.com"));
+        vSeeds.push_back(CDNSSeedData("greencoin.space", "greencoin.space"));
+        vSeeds.push_back(CDNSSeedData("greencoin.space", "trade.greencoin.space"));
         vSeeds.push_back(CDNSSeedData("cryptor.club", "grn.cryptor.club"));
+        vSeeds.push_back(CDNSSeedData("greencoin.life", "wallet.greencoin.life"));
+        vSeeds.push_back(CDNSSeedData("greencoin.online", "greencoin.online"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(38);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);

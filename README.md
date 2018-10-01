@@ -48,10 +48,6 @@ Install the dependencies to compile from source code.
 
 Create a directory for the source code.
 
-    mkdir source_code
-    cd source_code
-
-    sudo apt-get -y install git
     git clone https://github.com/CryptorClub/GreenCoin.git
 
 Go to the src directory of your source code.
